@@ -1,9 +1,8 @@
-import java.io.FileNotFoundException;
+//import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main {
 
-    /* Do not modify the method signature. */ 
     public static WordleGame startGame(Scanner scanner)  {
         System.out.println("Please input the number of the word to guess, max is " + WordBank.numWordsInDictionary());
         
@@ -28,8 +27,7 @@ public class Main {
     public static WordleGame startRandomGame()  {
         return new WordleGame((int) (Math.random()*WordBank.numWordsInDictionary() + 1));
     }
-
-    /* Do not modify the method signature. */ 
+ 
     public static void playGame(Scanner scanner, WordleGame game)  {
         scanner.nextLine();
         while(!game.isGameOver()){
@@ -57,7 +55,6 @@ public class Main {
         }
     }
 
-    /* Do not modify the method signature. */ 
     public static void reportGameOutcome(WordleGame game) {
         if(game.isGameWin()){
             System.out.println("Congratulations, you won!");
@@ -76,7 +73,6 @@ public class Main {
         );
     }
 
-    /* This main method body should not be modified. */ 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean exitProgram = false;
@@ -93,7 +89,6 @@ public class Main {
                         break;
                     case 2:
                         WordleGame newGameRandom = startRandomGame();
-                        System.out.print(newGameRandom.getAnswer() + "\n");
                         playGame(scanner, newGameRandom);
                         break;
                     case 3:

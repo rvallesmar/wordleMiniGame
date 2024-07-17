@@ -1,7 +1,6 @@
 public class WordleLetter {
 	private char letter;
 	private String color;
-	//private int indexPosition;
 
 	//Constructors
 	public WordleLetter(char letterIn){

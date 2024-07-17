@@ -3,12 +3,8 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class WordBank {
-  /*  This first method implementation is completed for you already. 
-      Do not modify the method signature 
-   */
   public static String getAnswerForPuzzleNumber(int puzzleNumber) {
     try {
-      /* Create a file scanner to read answers.txt */
       Scanner scanner = new Scanner(new File("answers.txt"));
 
       /* Skip the first puzzleNumber number of words in the file */
@@ -26,8 +22,7 @@ public class WordBank {
     
     return null;
   }
-
-  /* Do not modify the method signature. */
+  
   public static boolean checkInDictionary(String userTry) {
     try {
       File dictionary = new File("dictionary.txt");

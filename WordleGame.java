@@ -5,7 +5,6 @@ public class WordleGame {
   private WordleLetter[][] allGuesses = new WordleLetter[6][5];
   private String wordInPlay = "";
 
-  /*------TODO - implement according to spec ------*/
   //Constructor for a Wordle Game
   public WordleGame(int puzzleNumber){
     wordInPlay = WordBank.getAnswerForPuzzleNumber(puzzleNumber);
@@ -214,9 +213,6 @@ public class WordleGame {
     }
   }
 
-  /*------- TODO - include the remainder of the below code back in once rest of class is implemented.
-            Do not modify this method implementation ------*/
-
   public String toString() {
     /* result will be used to build the full answer String */ 
     String result = ""; 
@@ -224,11 +220,8 @@ public class WordleGame {
     for (int i = 0; i < getNumberGuessesSoFar(); i++) {
          /* get each letter of each word */
       for (int j = 0; j < 5; j++) {
-           /* concatenate it to the result */ 
-           /* WordleLetter's toString() is automatically invoked here. */
         result += getGuess(i)[j];
       }
-         /* new line separator between each word */ 
       result += "\n";
     }
     return result;
