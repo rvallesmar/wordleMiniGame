@@ -53,7 +53,6 @@ public class WordBank {
       Scanner fileReader = new Scanner(dictionary);
       int total = 0;
 
-      //Compare the user word to each word in the dictionary, and return true if there is an exact match
       while(fileReader.hasNextLine()){
         total++;
         fileReader.nextLine().trim();
