@@ -1,0 +1,1 @@
+Disclaimer: this is just a clone version of the Wordle game developed and currently owned by The New York Times Games. This was only made as a personal project with the purpose of sharpening my coding skills.
